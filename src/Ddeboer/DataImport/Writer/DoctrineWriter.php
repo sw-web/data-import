@@ -168,7 +168,6 @@ class DoctrineWriter extends AbstractWriter
     public function finish()
     {
         $this->entityManager->flush();
-        $this->entityManager->clear();
         $this->reEnableLogging();
 
         return $this;
